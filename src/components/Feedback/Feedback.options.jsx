@@ -1,10 +1,9 @@
 import './Feedback.module.css';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-  const arr = Object.keys(options);
   return (
     <div>
-      {arr.map(option => (
+      {options.map(option => (
         <button
           key={option}
           type="button"
